@@ -1,0 +1,64 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Example TLD</short-name>
+	
+	<tag>
+		<name>CurrentDateTime</name>
+		<tag-class>tagpack.DateTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<!-- <tag>
+		<name>CurrentTime</name>
+		<tag-class>tagpack.TimeBodyTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+	
+		<tag>
+		<name>RepeatText</name>
+		<tag-class>tagpack.RepeatBodyAttrTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>frequency</name>
+			<required>true</required>
+		</attribute>
+	</tag> -->
+	
+		<tag>
+		<name>getcar</name>
+		<tag-class>app.tags.ViewCarTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>imgPath</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>carname</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>carmodel</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>rentprice</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	
+			<tag>
+		<name>search</name>
+		<tag-class>tagpack.SearchTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>caseAttr</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>text</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+</taglib>
